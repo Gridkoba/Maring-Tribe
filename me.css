@@ -1,0 +1,39 @@
+/*This css file is for FOLLOW ME and also for home and some file*/
+
+/*This function is used in home and in song*/
+a {
+  font-family: monospace;
+  text-decoration: none;
+  color: black;
+}
+
+/*This function is used in comments area in the home page*/
+textarea {
+  font-family: sans-serif;
+  width:280px;
+  height:110px;
+  border-radius: 18%;
+  border: 2px solid grey;
+  background-image: linear-gradient(#7AAC60, white);
+}
+
+/*This function is used in the submit button of the comment*/
+button {
+  border-radius: 15%;
+  background-color: grey;
+}
+
+mark {
+  background-image: linear-gradient(#E77349, #6FCFBF);
+  font-family: monospace;
+  border-radius: 20%;
+  padding: 4px;
+}
+
+/*This function is for image in the cultural html file*/
+img {
+    width:380px;
+    height:250px;
+    border-radius: 20%;
+    border: 1px solid red;
+}

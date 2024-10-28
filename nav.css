@@ -1,0 +1,64 @@
+/* This css file is for bottom navigation*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#C6E9D8, #CA4033, violet);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #7B9F96;
+    border-top: 2px solid #C56666;
+    padding: 8px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button {
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.nav-button img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+    transition: transform 0.5s;
+}
+
+.nav-button span {
+    font-size: 8px;
+    margin-top: 3px;
+}
+
+.nav-button:hover img {
+    transform: scale(1.2);
+}
+
+.nav-button:hover span {
+    color: #006EE7;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="me.css">
+    <title>KOMO MOKO</title>
+    </head>
+    <body>
+<center>
+<div id="top"><figure>
+<h2 style="text-transform: uppercase">
+KOMO MOKO MIKE </h2></div>
+
+
+<!--This is for CHOOSE button-->
+<h4><mark>CHOOSE ME</h4>
+<br><h5><a href="love.html">
+Maring Love Song</h5></a><br>
+<h5><a href="gathering.html">
+Maring Gathering Song</h5></a><br>
+<h5><a href="culture.html">
+Maring Culture</h5></a>
+<br>
+
+
+
+
+<!-- This is for COMMENT button-->
+<h4><mark>COMMENT ME</h4><br>
+ <textarea id="myTextarea" placeholder="Post your comments here..."></textarea>
+ <br><center><br>
+ <button onclick="clearTextarea()">Submit</button>
+ <script>
+ function clearTextarea() {
+ document.getElementById('myTextarea').value = '';
+ }
+ </script>
+<br><br>
+
+
+<!--This is for FOLLOW Button-->
+<style>
+  .social-media-buttons {
+    display: table-cell;
+    gap: 20px;
+    padding: 5px;
+}
+
+.social-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 45%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.social-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+<div class="social-media-buttons">
+<a href="https://m.youtube.com/@Komomokomike" class="social-button">
+<img src="IMG/youtube.jpg"></a>
+<a href="https://wa.me/+918119874906" class="social-button">
+<img src="IMG/whatsapp.jpg"></a>
+<a href="https://m.facebook.com/profile.php?id=61564024684798&name=xhp_nt__fb__action__open_user" class="social-button">
+<img src="IMG/facebook.jpg"></a>
+<a href="mailto: maringboy99@gmail.com" class="social-button">
+<img src="IMG/gmail.jpg"></a>
+</div>
+
+
+<!-- Bottom Navigation Bar -->
+<div class="bottom-nav">
+<a href="home.html" class="nav-button">
+<img src="IMG/home.jpg">
+<span>Home</span></a>
+<a href="developer.html" class="nav-button">
+<img src="IMG/developer.jpg">
+<span>Developer</span></a>
+<a href onclick="shareContent()" class="nav-button">
+<img src="IMG/share.jpg"><span>Share me</span>
+<a href="https://yt1d.com/en11/" class="nav-button">
+<img src="IMG/downloader.jpg">
+<span>Video-Downloader</span></a>
+<script>
+function shareContent() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'Maring Tribe',
+      text: 'KOMO MOKO',
+      url: 'https://maring-tribe.netlify.app/',
+})
+    .then(() => console.log('Shared successfully'))
+    .catch((error) => console.error('Error sharing:', error));
+} 
+  else {
+    alert("Sorry, something went wrong");
+}
+}
+</script>
+</a>
+</div>
+</body>
+</html>
