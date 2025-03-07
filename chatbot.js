@@ -96,7 +96,7 @@ function displayBotResponse(botText) {
 
     let botMessage = document.createElement("div");
     botMessage.classList.add("message", "bot");
-    botMessage.innerHTML = "<b>Komo's Assistant:</b> ";
+    botMessage.innerHTML = "<b>Komo Chatbot:</b> ";
     chatBox.appendChild(botMessage);
 
     let i = 0;
