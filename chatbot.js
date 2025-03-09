@@ -33,7 +33,7 @@ function displayGreeting() {
     typingMessage.innerHTML = "<b>Komo Chatbot:</b> ";
     chatBox.appendChild(typingMessage);
 
-    let text = "Hello, I'm Komo Chatbot. How can I assist you today 🥱";
+    let text = "Hello, I'm Komo Chatbot. I will help you help you in every steps🥱";
     let i = 0;
 
     function type() {
