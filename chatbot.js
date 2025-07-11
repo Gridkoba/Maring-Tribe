@@ -1,8 +1,8 @@
-const API_KEY = "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"; // Replace with your OpenRouter API key
+const API_KEY = "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";
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 let conversationHistory = [];
-let hasGreeted = false; // Flag to ensure greeting is shown only once
+let hasGreeted = false; 
 
 // Toggle Chatbot
 document.getElementById("chatbot-toggle").addEventListener("click", function () {
@@ -10,7 +10,7 @@ document.getElementById("chatbot-toggle").addEventListener("click", function () 
     
     if (!hasGreeted) {
         displayGreeting();
-        hasGreeted = true; // Set flag to true so it won't repeat
+        hasGreeted = true;
     }
 });
 
@@ -40,11 +40,11 @@ function displayGreeting() {
         if (i < text.length) {
             typingMessage.innerHTML += text.charAt(i);
             i++;
-            setTimeout(type, 50); // Adjust speed of typing effect
+            setTimeout(type, 50); 
         }
     }
 
-    setTimeout(type, 500); // Delay before typing starts
+    setTimeout(type, 500); 
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
@@ -78,8 +78,8 @@ async function sendMessage() {
 
     // Check if user asked about the developer
     const lowerCaseInput = userInput.toLowerCase();
-    if (lowerCaseInput.includes("who is the developer") || lowerCaseInput.includes("developer")) {
-        displayBotResponse("The developer of this chatbot is Koninga Moshilning S/O Koninga Leirung and Koninga Tungnai. He lives in the North East state of Manipur state belongs to Maring tribe");
+    if (lowerCaseInput.includes("who is the developer") || lowerCaseInput.includes("developer,chatbot")) {
+        displayBotResponse("Moshilning Koninga is the developer of this chatbot. He lives in the North East state of Manipur,India belongs to Maring tribe (Naga Community)");
         return;
     }
 
